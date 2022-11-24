@@ -40,44 +40,49 @@
     </head>
     <body>
         <div class="container">
-            <form id="form1" action="/pagina-processa-dados-do-form" method="post">
+            <form>
                 <div style="padding-top: 0.75rem;">
                     <label for="nome">Nome:</label><br/>
-                    <input class="w-90" type="text" id="nome" placeholder="digite seu nome completo "/>
+                    <input class="w-90" type="text" name="nome"  placeholder="digite seu nome completo "/>
                 </div>
                 <div style="padding-top: 0.75rem;">
                     <label for="email">E-mail:</label><br/>
-                    <input class="w-90" type="email" id="email"  placeholder="digite seu email ex: aluno@gmail.com"/>
+                    <input class="w-90" type="email" name="email"  placeholder="digite seu email ex: aluno@gmail.com"/>
                 </div>
                 <div style="padding-top: 0.75rem;">
                     <label for="msg">Mensagem:</label><br/>
-                    <textarea class="w-90" id="msg" placeholder="digite sua opiniao sobre o curso se possivel"></textarea>
+                    <textarea class="w-90" name="mensagem" placeholder="digite sua opiniao sobre o curso se possivel"></textarea>
                 </div>
             
                 <div style="padding-top: 0.75rem;">
-                    <label for="modulo">modulo:</label><br/>
-                    <input class="w-90" type="text" id="modulo"  placeholder="Modulo em que vc esta "/>
+                    <select class="w-90" required="true" name="modulo">
+                        <option value="">selecione seu modulo</option>
+                        <option value="Modulo_1">Modulo 1</option>
+                        <option value="Modulo_2">Modulo 2</option>
+                        <option value="Modulo_3">Modulo 3</option>
+                      </select>
                 </div>
 
                 <div style="padding-top: 0.75rem;">
                     <label for="password">senha:</label><br/>
-                    <input class="w-90" type="password" id="password"  placeholder="digite uma senha"/>
+                    <input class="w-90" type="password" name="senha"  placeholder="digite uma senha"/>
                 </div>
                 <div style="padding-top: 0.75rem;">
                     <label for="cofirm-password">confirmar senha:</label><br/>
-                    <input class="w-90" type="cofirm-password" id="cofirm-password"  placeholder="confirme sua senha"/>
+                    <input class="w-90" type="cofirm-password" name="confirma"  placeholder="confirme sua senha"/>
                 </div>
                 <div style="padding-top: 0.75rem;">
                     <p>Deseja receber notificacao por email?</p>
-                    <input type="radio" id="sim" name="opcao" value="sim">
+                    <input type="radio" name="opcao" value="sim">
                     <label for="sim">sim</label>
-                    <input type="radio" id="nao" name="opcao" value="nao">
+                    <input type="radio" name="opcao" value="nao">
                     <label for="css">nao</label>
                 </div>
+                <div style="padding-top: 0.75rem;">
+                    <button class="w-90" type="submit">Cadastrar</button>
+                </div>
             </form>
-            <div style="padding-top: 0.75rem;">
-                <button class="w-90" type="submit" form="form1" value="Submit">Cadastrar</button>
-            </div>
+            
         </div>
     </body>
 </html>
