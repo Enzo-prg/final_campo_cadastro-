@@ -6,19 +6,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>campo cadastro</title>
         <style>
-            .container {
+            
+            @media screen and (min-width: 600px) {
+                .container {
                 text-align: center;
                 margin: auto;
-                
+                width: 50%;
+                max-width: 560px;
                 padding: 10px;
                 background-color: #E5E7E9;
                 border-radius: 20px;
                 
             }
-            @media only screen and (min-width: 600px) {
-            .cotainer {
-                width: 50%;
-                max-width: 560px;
+            }
+            @media screen and (max-width: 900px) {
+                .container {
+                text-align: center;
+                margin: auto;
+                width: 90%;
+                
+                padding: 10px;
+                background-color: #E5E7E9;
+                border-radius: 20px;
+                
             }
             }
             .w-90 {
